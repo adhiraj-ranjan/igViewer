@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/css/index.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Instagram Viewer</h1>
+    </header>
+    
+    <div class="search-container">
+        <input type="text" placeholder="Enter Username.">
+        <button class="search-button">Search</button>
+    </div>
+
+    <div class="loading-container">
+        <img src="{{ url_for('static', filename='images/loading.svg') }}" alt="Loading Icon" class="loading-icon">
+    </div>  
+
+    <main>
+        <!-- Content goes here -->
+    </main>
+</body>
+</html>
